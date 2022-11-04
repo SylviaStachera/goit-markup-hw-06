@@ -661,9 +661,6 @@ figure {
 	margin-bottom: 20px;
 }
 
-.join-us {
-	/* padding-top: 72px; */
-}
 .list-icon-footer {
 	display: flex;
 	list-style: none;
@@ -720,9 +717,13 @@ figure {
 	outline: 0;
 }
 
-.btn-newsletter{
+.btn-newsletter {
 	margin: 0;
+	fill: var(--main-white);
+	margin-left: 24px;
 }
+
+
 
 /* okno modalne */
 
