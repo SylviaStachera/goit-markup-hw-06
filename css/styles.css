@@ -823,6 +823,32 @@ figure {
 	color: var(--main-grey);
 }
 
+.input-modal {
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.input-modal:focus {
+	outline: 0;
+	border-color: var(--active-color);
+}
+.input-modal:focus .label-modal {
+	color: var(--active-color);
+}
+
+.textarea-modal {
+	resize: none;
+	padding: 12px 16px;
+	height: 120px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 1.1667;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
 /* .is-hidden {
 	opacity: 0;
 	pointer-events: none;
