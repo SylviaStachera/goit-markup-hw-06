@@ -827,14 +827,7 @@ figure {
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-}
-
-.input-modal:focus {
-	outline: 0;
-	border-color: var(--active-color);
-}
-.input-modal:focus .label-modal {
-	color: var(--active-color);
+	transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-modal {
@@ -847,6 +840,39 @@ figure {
 	line-height: 1.1667;
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
+	transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:focus,
+.textarea-modal:focus {
+	outline: 0;
+	border-color: var(--active-color);
+}
+
+.checkbox-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.7143;
+	letter-spacing: 0.03em;
+	color: var(--main-grey);
+}
+
+.chceckbox-icon {
+	padding-top: 25px;
+	margin-right: 7px;
+	width: 16px;
+	height: 15px;
+}
+
+.checkbox-link {
+	color: var(--active-color);
+}
+
+.btn-send {
+	margin-inline: auto;
 }
 
 /* .is-hidden {
