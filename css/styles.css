@@ -737,17 +737,21 @@ figure {
 /* @keyframes modalUp {
 	from {
 		scale: 0;
+		opacity: 0;
 	}
 	to {
 		scale: 1;
+		opacity: 1;
 	}
 }
 @keyframes modalDown {
 	from {
 		scale: 1;
+		opacity: 1;
 	}
 	to {
 		scale: 0;
+		opacity: 0;
 	}
 } */
 
@@ -759,6 +763,7 @@ figure {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.2);
 	transition: opacity 0.25s linear;
+	/* animation: modalUp 1s; */
 }
 
 .modal {
@@ -790,6 +795,12 @@ figure {
 
 .close-btn:hover {
 	cursor: pointer;
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	/* animation: modalDown 1s; */
 }
 
 /* formularz  */
@@ -934,11 +945,6 @@ figure {
 	fill: var(--active-color);
 }
 
-.is-hidden {
-	opacity: 0;
-	pointer-events: none;
-}
-
 /* portfolio */
 
 .ul-btn {
@@ -1043,6 +1049,7 @@ figure {
 	width: 100%;
 }
 
-.overlay:hover .div-absolut-portfolio {
+.overlay:hover .div-absolut-portfolio,
+.section-figure-card:hover .div-absolut-portfolio {
 	transform: translateY(0);
 }
